@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Year Countdown Using JavaScript | Nabin Bhatt</title>
+    <meta name="description"
+        content="The simple countdown timer that displays the number of days, hours, minutes, and seconds remaining until the new year 2023." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text">The New Year Is Coming Soon!</h1>
+        <div id="countdown">
+            <div class="circle" style="--clr: #f00;">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="dd"></circle>
+                </svg>
+                <div id="days">000<br><span>Days</span></div>
+            </div>
+
+            <div class="circle" style="--clr: #ff0;">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="hh"></circle>
+                </svg>
+                <div id="hours">00<br><span>Hours</span></div>
+            </div>
+
+            <div class="circle" style="--clr: #0ff;">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="mm"></circle>
+                </svg>
+                <div id="minutes">00<br><span>Minutes</span></div>
+            </div>
+
+            <div class="circle" style="--clr: #0f0;">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss"></circle>
+                </svg>
+                <div id="seconds">00<br><span>Seconds</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- share/social menu -->
+    <div class="menu">
+        <div class="share-container">
+            <div id="share">
+                <ion-icon name="share-social"></ion-icon>
+            </div>
+            <ul class="shareMenu">
+                <li><span>share</span></li>
+                <li style="--i:0;--clr:#1877f2;">
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li style="--i:1;--clr:#25d366;">
+                    <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </li>
+                <li style="--i:2;--clr:#1da1f2;">
+                    <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li style="--i:4;--clr:#0077b5;">
+                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-container">
+            <div id="social">
+                <ion-icon name="help-outline"></ion-icon>
+            </div>
+            <ul class="socialMenu">
+                <li><span>Me</span></li>
+                <li style="--i:0;--clr:#1da1f2;">
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li style="--i:1;--clr:#fd1d1d;">
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li style="--i:2;--clr:#0077b5;">
+                    <a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li style="--i:3;--clr:#333;">
+                    <a href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <canvas id="snowflakes"></canvas>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
