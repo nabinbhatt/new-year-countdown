@@ -69,7 +69,7 @@ class SnowFlake {
     this.x = Math.random() * canvas.width;
     this.y = Math.random() * canvas.height;
     this.vx = Math.random() - 0.5;
-    this.vy = Math.random() * 1.5 + 1;
+    this.vy = Math.random() * 1 + 1;
     this.radius = Math.random() * 1 + 1;
     this.color = colors[Math.floor(Math.random() * colors.length)];
   }
@@ -127,7 +127,7 @@ function createFlake() {
   }, 5000)
 }
 
-setInterval(createFlake, 50);
+setInterval(createFlake, 500);
 
 // help button
 let share = document.getElementById('share');
@@ -137,11 +137,14 @@ let shareMenu = document.querySelector('.shareMenu');
 let socialMenu = document.querySelector('.socialMenu');
 
 let menu = document.querySelector('.menu');
+let overlay = document.querySelector('.overlay');
 
 share.onclick = function() {
   shareMenu.classList.toggle('active');
+  overlay.classList.toggle('act');
 }
 
 social.onclick = function() {
   socialMenu.classList.toggle('active');
+  overlay.classList.toggle('ive');
 }
