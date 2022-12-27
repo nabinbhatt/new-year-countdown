@@ -123,7 +123,6 @@ ion-icon[name="snow-outline"] {
   justify-content: center;
   align-items: flex-end;
   margin: 0 1em 1em 0;
-  gap: 1em;
   z-index: 9;
 }
 
@@ -154,7 +153,7 @@ ion-icon[name="snow-outline"] {
   right: -1em;
   bottom: -1em;
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   background: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
@@ -163,7 +162,7 @@ ion-icon[name="snow-outline"] {
   transform: rotate(360deg);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15),
   0 0 0 2px #333,
-  0 0 0 8px #fff;
+  0 0 0 6px #fff;
 }
 
 .share-container {
@@ -217,21 +216,21 @@ ion-icon[name="snow-outline"] {
 
 .menu li a {
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: var(--clr);
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
 
 .menu li:hover a {
-  font-size: 2em;
+  font-size: 1.6em;
   box-shadow: 0 0 0 2px var(--clr),
   0 0 0 6px #fff;
 }
