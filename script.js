@@ -130,21 +130,14 @@ function createFlake() {
 setInterval(createFlake, 500);
 
 // help button
-let share = document.getElementById('share');
-let social = document.getElementById('social');
-
-let shareMenu = document.querySelector('.shareMenu');
-let socialMenu = document.querySelector('.socialMenu');
-
+let help = document.getElementById('help');
 let menu = document.querySelector('.menu');
-let overlay = document.querySelector('.overlay');
 
-share.onclick = function() {
-  shareMenu.classList.toggle('active');
-  overlay.classList.toggle('act');
-}
-
-social.onclick = function() {
-  socialMenu.classList.toggle('active');
-  overlay.classList.toggle('ive');
+help.onclick = function() {
+  menu.classList.toggle('active');
+  if (menu.classList.contains('active')) {
+    help.innerHTML = `<ion-icon name="close-outline"></ion-icon>`;
+  } else {
+    help.innerHTML = `<ion-icon name="menu-icon"><ion-icon>`;
+  }
 }
