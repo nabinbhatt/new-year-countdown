@@ -138,6 +138,6 @@ help.onclick = function() {
   if (menu.classList.contains('active')) {
     help.innerHTML = `<ion-icon name="close-outline"></ion-icon>`;
   } else {
-    help.innerHTML = `<ion-icon name="menu-icon"><ion-icon>`;
+    help.innerHTML = `<ion-icon name="menu-outline"><ion-icon>`;
   }
 }
